@@ -1,0 +1,54 @@
+---
+title: 'Discussion 11: Pandora Radio'
+author: "C. Rosemond 110619"
+output:
+    pdf_document:
+        latex_engine: "xelatex"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### Summary
+Pandora Radio is a music streaming service geared towards online and mobile listeners in the United States. It recommends songs based upon a combination of user preferences and songs' musical traits as identified by its Music Genome Project. Service operator Sirius XM reported that, as of Q1 2019, Pandora had approximately 66 million users (SiriusXM 2019). 
+
+<br>
+
+### Scenario Design
+#### 1) Who are Pandora's target users?
+
+Pandora's target users are online and/or mobile music listeners. Pandora offers users the ability to create personalized radio stations, with advertisements, for free and additional features like ad-free, offline, or on-demand listening via paid subscription. 
+
+#### 2) What are their key goals?
+
+Pandora users are interested in a personalized listening experience wherein songs are curated for them based upon their given or demonstrated preferences--for genre, period, or otherwise.
+
+#### 3) How can Pandora help them accomplish these goals?
+
+Pandora grew from the Music Genome Project, "where [Pandora's] music experts analyzed every song on Pandora across genres and decades for nearly 500 musical traits" (Pandora 2019). The site compares these song-associated traits to users' listening preferences--as demonstrated by initial searches and station creation as well as positive/negative feedback and other user behaviors--in order to recommend new songs that align with those preferences.
+
+<br>
+
+### Reverse Engineering
+Pandora offers both web browser and mobile app interfaces, each offering users the ability to listen to genre-specific stations, stations created by other users, or their own created stations. Regarding user-created stations, upon a user's new search, Pandora uses auto-completion to predict and suggest existing stations, artists, or songs. And through user feedback, Pandora creates a user-specific Thumbsup Radio station consisting of songs that have been given a "thumbs up" plus other songs closely related by trait.
+
+Per an undated interview with Pandora staff, an online article suggests that Pandora draws on "almost 75 billion points of feedback" across metrics like number of thumbs up or down, number of skips, number of station listens, location of listening, time of day and length of time of listening, and others (Lawton 2017). All of this feedback seeds some "70 different algorithms: 10 analyze content, 40 process collective intelligence, and then another 30 do personalized filtering" (Lawton 2017). 
+
+<br>
+
+### Recommendations
+Years ago, as a Pandora free subscriber, I found the reliance on thumbs up or down limiting. Regarding the service's recommender system, I expect that relying on a binary may not result in the useful feedback that a scale of preference could. I would suggest Pandora test a scale, which would add complication but also offer richer, more specific data. 
+
+Further, I understand that Pandora Plus and Pandora Premium now offer many features that could create a wealth of new user data. Offline listening has the potential to create more granular geographic data, and on-demand play likely provides even stronger indications of user preferences. I presume Pandora focuses on paid subscribers as a treatment group anyway, but if not, these users represent a testing ground for more interesting user data collections.
+
+<br>
+
+### Sources
+Lawton, G. (2017, August 09). "How Pandora built a better recommendation engine". Retrieved from https://www.theserverside.com/feature/How-Pandora-built-a-better-recommendation-engine
+
+Pandora (2019). Pandora.com. Retrieved from https://www.pandora.com/
+
+SiriusXM (2019, April 24). "SiriusXM reports first quarter 2019 results". Retrieved from http://investor.siriusxm.com/investor-overview/press-releases/press-release-details/2019/SiriusXM-Reports-First-Quarter-2019-Results/default.aspx
+
+Wikipedia (2019). "Pandora Radio". Retrieved from https://en.wikipedia.org/wiki/Pandora_Radio
